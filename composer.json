@@ -1,0 +1,55 @@
+{
+    "name": "mca/captcha",
+    "description": "reCAPTCHA, hCaptcha and Cloudflare Turnstile with single active driver for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "mca", "captcha", "recaptcha", "hcaptcha", "turnstile"],
+    "require": {
+        "php": "^8.3",
+        "laravel/framework": "^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^11.0",
+        "phpunit/phpunit": "^12.0"
+    },
+    "suggest": {
+        "mca/permission": "Root access middleware for captcha admin UI",
+        "mca/hub": "MCA package hub integration"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mca\\Captcha\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mca\\Captcha\\CaptchaServiceProvider"
+            ]
+        },
+        "mca": {
+            "slug": "captcha",
+            "title": {
+                "en": "Captcha",
+                "tr": "Captcha"
+            },
+            "description": {
+                "en": "reCAPTCHA, hCaptcha and Turnstile — one active driver.",
+                "tr": "reCAPTCHA, hCaptcha ve Turnstile — tek aktif sürücü."
+            },
+            "route": "mca.captcha.index",
+            "github": "https://github.com/MCA43/mca-captcha",
+            "icon": "shield",
+            "order": 35,
+            "frameworks": ["laravel13"]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,64 @@
+.mca-cap-root .mca-cap-main {
+  max-width: 920px;
+}
+
+.mca-cap-toolbar {
+  margin-bottom: 1.25rem;
+}
+
+.mca-cap-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.mca-cap-tabs__link {
+  appearance: none;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  font-size: 0.875rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.mca-cap-tabs__link.is-active {
+  border-color: rgba(15, 23, 42, 0.35);
+  background: rgba(15, 23, 42, 0.04);
+  font-weight: 600;
+}
+
+.mca-cap-tabs__badge {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.mca-cap-panel {
+  display: none;
+}
+
+.mca-cap-panel.is-active {
+  display: block;
+}
+
+.mca-cap-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .mca-cap-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.mca-cap-form .mca-perm-card__footer {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
